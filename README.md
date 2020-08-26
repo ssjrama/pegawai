@@ -6,6 +6,10 @@ Aplikasi ini adalah aplikasi yang saya kembangkan untuk memenuhi tugas Praktek S
 
 Disini saya hanya membuat sebuah aplikasi sederhana berbasis web dengan operasi CRUD untuk data karyawan. 
 
+## Flow Chart
+
+![flowchart](https://github.com/ssjrama/pegawai/blob/master/flowchart.png "Flowchart")
+
 ## Requirements 
 
 - PHP >= 7.0.0
