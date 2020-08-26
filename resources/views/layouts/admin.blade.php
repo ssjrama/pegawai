@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{asset('/spur/fa/css/all.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('/spur/css/spur.min.css')}}">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <title>Pegawai</title>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <title>Pegawai App</title>
 </head>
 
 <body>
@@ -73,7 +74,7 @@
             @yield('content')
         </div>
     </div>
-    <script src="{{asset('/spur/js/spur.js')}}"></script>
+    <script src="{{ asset('js/jquery-3.3.1.slim.min.js') }}"></script>
+    <script src="{{ asset('/spur/js/spur.js')}}"> </script> --}}
 </body>
-
 </html>
