@@ -20,7 +20,11 @@
                 <tbody>
                     @foreach ($pegawai as $p)
                 <tr>
-                    <td>Kar{{$p->id}}</td>
+                    @if ($p->id < 10)
+                        <td>Kar0{{$p->id}}</td>
+                    @else
+                        <td>Kar{{$p->id}}</td>
+                    @endif
                     <td>{{$p->nama}}</td>
                     <td>{{$p->jenis_kelamin}}</td>
                     @if ($p->status_pernikahan == 'M')
