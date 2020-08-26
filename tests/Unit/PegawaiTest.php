@@ -39,27 +39,27 @@ class PegawaiTest extends TestCase
 
     public function test_update(){
         $pegawai = Pegawai::create([
-            'nama' => 'Wahyu',
-            'jenis_kelamin' => 'L',
-            'status_pernikahan' => 'M',
-            'tanggal_lahir' => '2000-11-20',
-            'alamat' => 'Cirebon'
-        ]);
-
-        $pegawai = Pegawai::findOrFail(1);
-        $pegawai->nama = 'Wahyu Ramadhan';
-        $pegawai->jenis_kelamin = 'L';
-        $pegawai->status_pernikahan = 'M';
-        $pegawai->tanggal_lahir = '2000-11-20';
-        $pegawai->alamat = 'Indramayu';
-        $pegawai->save();
-
-        $this->assertDatabaseHas('pegawai',[
             'nama' => 'Wahyu Ramadhan',
             'jenis_kelamin' => 'L',
             'status_pernikahan' => 'M',
             'tanggal_lahir' => '2000-11-20',
             'alamat' => 'Indramayu'
+        ]);
+
+        $pegawai = Pegawai::findOrFail(2);
+        $pegawai->nama = 'Wahyu';
+        $pegawai->jenis_kelamin = 'L';
+        $pegawai->status_pernikahan = 'M';
+        $pegawai->tanggal_lahir = '2000-11-20';
+        $pegawai->alamat = 'Cirebon';
+        $pegawai->save();
+
+        $this->assertDatabaseHas('pegawai',[
+            'nama' => 'Wahyu',
+            'jenis_kelamin' => 'L',
+            'status_pernikahan' => 'M',
+            'tanggal_lahir' => '2000-11-20',
+            'alamat' => 'Cirebon'
         ]);
     }
 
