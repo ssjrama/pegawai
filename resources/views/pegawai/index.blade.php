@@ -26,7 +26,11 @@
                         <td>Kar{{$p->id}}</td>
                     @endif
                     <td>{{$p->nama}}</td>
-                    <td>{{$p->jenis_kelamin}}</td>
+                    @if ($p->jenis_kelamin == 'L')
+                        <td>Laki - laki</td>
+                    @else
+                        <td>Perempuan</td>
+                    @endif
                     @if ($p->status_pernikahan == 'M')
                         <td>Menikah</td>
                     @else
