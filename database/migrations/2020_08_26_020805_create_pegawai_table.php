@@ -17,8 +17,8 @@ class CreatePegawaiTable extends Migration
             $table->id();
             $table->string('nama');
             $table->string('nomor_pegawai')->nullable()->default('');
-            $table->string('jenis_kelamin');
-            $table->string('status_pernikahan');
+            $table->boolean('jenis_kelamin');
+            $table->boolean('status_pernikahan');
             $table->date('tanggal_lahir');
             $table->text('alamat');
             $table->timestamps();
