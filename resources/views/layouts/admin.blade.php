@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('/spur/fa/css/all.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('/spur/css/spur.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/jquery.dataTables.min.css')}}">
     <script src="{{ asset('js/app.js') }}" defer></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>Pegawai App</title>
@@ -75,6 +76,12 @@
         </div>
     </div>
     <script src="{{ asset('js/jquery-3.3.1.slim.min.js') }}"></script>
-    <script src="{{ asset('/spur/js/spur.js')}}"> </script> --}}
+    <script src="{{ asset('js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/spur/js/spur.js')}}"> </script>
+    <script>
+        $(document).ready( function () {
+            $('#datatables').DataTable();
+        } );
+    </script>
 </body>
 </html>

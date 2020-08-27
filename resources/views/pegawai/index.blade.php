@@ -4,7 +4,7 @@
     <div class="container-fluid">
        <a href="/pegawai/create" class="btn btn-primary">Tambah Data Pegawai</a>
        @if (count($pegawai)>0)
-            <table id="table_id" class="table table-striped display">
+            <table id="datatables" class="table table-striped display">
                 <thead>
                     <tr>
                         <th>Nomor Pegawai</th>
