@@ -36,6 +36,8 @@ class PegawaiController extends Controller
      */
     public function store(Request $request)
     {
+        // typo tgl
+
         $this->validate($request,[
             'nama' => 'required',
             'jenis_kelamin' => 'required',

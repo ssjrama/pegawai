@@ -18,6 +18,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    {{-- typo pgwai  --}}
                     @foreach ($pegawai as $p)
                 <tr>
                     @if ($p->id < 10)

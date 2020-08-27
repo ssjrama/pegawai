@@ -10,7 +10,7 @@ use App\Pegawai;
 
 class PegawaiTest extends TestCase
 {
-    use RefreshDatabase;
+    //use RefreshDatabase;
 
     public function test_store(){
         $pegawai = Pegawai::create([
@@ -38,15 +38,15 @@ class PegawaiTest extends TestCase
     }
 
     public function test_update(){
-        $pegawai = Pegawai::create([
-            'nama' => 'Wahyu Ramadhan',
-            'jenis_kelamin' => 'L',
-            'status_pernikahan' => 'M',
-            'tanggal_lahir' => '2000-11-20',
-            'alamat' => 'Indramayu'
-        ]);
+        // $pegawai = Pegawai::create([
+        //     'nama' => 'Wahyu Ramadhan',
+        //     'jenis_kelamin' => 'L',
+        //     'status_pernikahan' => 'M',
+        //     'tanggal_lahir' => '2000-11-20',
+        //     'alamat' => 'Indramayu'
+        // ]);
 
-        $pegawai = Pegawai::findOrFail(2);
+        $pegawai = Pegawai::findOrFail(6);
         $pegawai->nama = 'Wahyu';
         $pegawai->jenis_kelamin = 'L';
         $pegawai->status_pernikahan = 'M';
