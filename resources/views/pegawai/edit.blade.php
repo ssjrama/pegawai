@@ -2,11 +2,11 @@
 @section('content')    
 <main class="dash-content">
     <div class="container-fluid">
-        @if ($errors->any())
+        {{-- @if ($errors->any())
             @foreach ($errors->all() as $error)
                 <div class="alert alert-danger">{{$error}}</div>
             @endforeach
-        @endif
+        @endif --}}
         <form action="/pegawai/{{$pegawai->id}}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PATCH')
