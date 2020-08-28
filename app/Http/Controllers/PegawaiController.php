@@ -46,8 +46,10 @@ class PegawaiController extends Controller
             'alamat' => 'required',
         ]);
 
+        // Konstanta
+        // const $nama_tengah = 'polindra';
         $pegawai = new Pegawai();
-        $pegawai->nama = $request->input('nama');
+        $pegawai->nama = $request->input('nama')/*.' '.$nama_tengah*/;
         $pegawai->jenis_kelamin = $request->input('jenis_kelamin');
         $pegawai->status_pernikahan = $request->input('status_pernikahan');
         $pegawai->tanggal_lahir = $request->input('tanggal_lahir');
