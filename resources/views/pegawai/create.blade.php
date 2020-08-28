@@ -2,6 +2,11 @@
 @section('content')    
 <main class="dash-content">
     <div class="container-fluid">
+        @if ($errors->any())
+            @foreach ($errors->all() as $error)
+                <div class="alert alert-danger">{{$error}}</div>
+            @endforeach
+        @endif
         <form action="/pegawai" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
@@ -12,16 +17,16 @@
             <div class="form-group">
                 <label for="jenis_kelamin">Jenis Kelamin</label>
                 <select class="form-control" name="jenis_kelamin">
-                    <option value="L">Laki - laki</option>
-                    <option value="P">Perempuan</option>
+                    <option value="1">Laki - laki</option>
+                    <option value="0">Perempuan</option>
                 </select> 
             </div>
 
             <div class="form-group">
                 <label for="status_pernikahan">Status</label>
                 <select class="form-control" name="status_pernikahan">
-                    <option value="M">Menikah</option>
-                    <option value="B">Belum Menikah</option>
+                    <option value="1">Menikah</option>
+                    <option value="0">Belum Menikah</option>
                 </select>
             </div>
 
