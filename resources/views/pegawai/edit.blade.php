@@ -7,6 +7,8 @@
                 <div class="alert alert-danger">{{$error}}</div>
             @endforeach
         @endif --}}
+
+        {{-- Form untuk merubah data pegawai --}}
         <form action="/pegawai/{{$pegawai->id}}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PATCH')

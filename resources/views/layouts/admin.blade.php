@@ -53,6 +53,8 @@
                     {{-- <a href="#!" class="tools-item">
                         <i class="fas fa-bell"></i>
                     </a> --}}
+
+                    {{-- dropdown logout --}}
                     <div class="dropdown tools-item">
                         <a href="#" class="" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user"></i>

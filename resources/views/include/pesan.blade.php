@@ -1,4 +1,4 @@
-{{-- Session Message --}}
+{{-- Pesan Sesi --}}
 
 @if ($errors->any())
     @foreach ($errors->all() as $error)

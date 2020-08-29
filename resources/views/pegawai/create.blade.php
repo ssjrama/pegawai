@@ -7,6 +7,8 @@
                 <div class="alert alert-danger">{{$error}}</div>
             @endforeach
         @endif --}}
+
+        {{-- Form untuk menambah data pegawai --}}
         <form action="/pegawai" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
